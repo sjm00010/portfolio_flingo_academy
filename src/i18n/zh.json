@@ -1,0 +1,160 @@
+{
+  "languageSwitcher": { "en": "EN", "es": "ES", "zh": "中文" },
+  "nav": {
+    "about": "关于我们",
+    "teachers": "教师",
+    "pricing": "套餐",
+    "cta": "立即预约"
+  },
+  "hero": {
+    "eyebrow": "词条 Nº 001 — 名词 / 动词",
+    "word": "flingo",
+    "phonetic": "/ˈfliŋ·goh/",
+    "def1": "从第一天起就开口说英语，不再害怕犯错。",
+    "def2": "真人教师实时授课——绝非录播视频。",
+    "ctaButton": "免费开始 →",
+    "ctaNote": "↳ 第一节课，免费",
+    "photoCaption": "图片：学生与老师视频通话",
+    "stampLine1": "100%",
+    "stampLine2": "实时"
+  },
+  "method": {
+    "title": "方法目录",
+    "count": "3 个章节",
+    "items": [
+      {
+        "title": "专业教师",
+        "bullets": ["丰富的教学经验", "国际学生教学经验", "专业认证（TEFL/TESOL）"]
+      },
+      {
+        "title": "个性化学习",
+        "bullets": ["1对1（个人）课程", "个人学习计划", "定制学习材料", "持续进度跟踪"]
+      },
+      {
+        "title": "灵活的时间安排",
+        "bullets": ["早、中、晚均可上课", "周末课程可选", "时区友好（亚洲和欧洲）"]
+      }
+    ]
+  },
+  "about": {
+    "title": "Flingo 名字的由来",
+    "lead": "Flingo Academy 不仅仅是一个名字，它代表着我们的创始人、我们的教师，以及我们坚信语言能创造全球机遇的核心理念。",
+    "items": [
+      {
+        "badge": "F",
+        "title": "创始人 “F” 与菲律宾教师团队",
+        "desc": "致力于以热情和专业精神提供世界一流的英语教育。"
+      },
+      {
+        "badge": "L",
+        "title": "Louis",
+        "desc": "我们的业务合伙人兼联合创始人，保障运营卓越与学员成功。"
+      },
+      {
+        "badge": "Lingo",
+        "title": "语言、连接与交流",
+        "desc": "通过沟通在亚洲、欧洲与世界之间架起桥梁。"
+      }
+    ],
+    "mission": {
+      "label": "我们的使命",
+      "text": "通过生动、实用且个性化的在线教育，帮助学生自信地用英语交流。"
+    }
+  },
+  "teachers": {
+    "eyebrow": "师资团队",
+    "title": "跟最好的老师学习",
+    "viewProfile": "查看资料"
+  },
+  "cta": {
+    "title": "准备好开启下一章了吗？",
+    "note": "第一节课免费，无需信用卡",
+    "button": "联系我们"
+  },
+  "footer": {
+    "tagline": "用你的方式学英语——实时课堂，真人教师。",
+    "academyTitle": "学院",
+    "academyLinks": ["关于我们", "教师", "价格"],
+    "contactTitle": "联系我们",
+    "contact": ["hello@flingoacademy.com", "+52 55 1234 5678"],
+    "copyright": "© 2026 FLINGO ACADEMY — 保留所有权利"
+  },
+  "pricing": {
+    "eyebrow": "登机套餐 — 目的地：流利英语",
+    "title": "选择你的套餐",
+    "subtitle": "所有套餐均含首节免费课程，随时可取消。",
+    "monthly": "月付",
+    "annual": "年付",
+    "discount": "（−20%）",
+    "perMonth": "/月",
+    "plans": [
+      {
+        "id": "starter",
+        "number": "套餐 Nº 001",
+        "name": "入门版",
+        "price": "$29",
+        "features": ["每周 1 节小组课", "有限 AI 对话练习", "自学资源", "进度证书"],
+        "cta": "登机"
+      },
+      {
+        "id": "pro",
+        "number": "套餐 Nº 002",
+        "name": "专业版",
+        "price": "$59",
+        "featured": true,
+        "badge": "最受欢迎",
+        "features": [
+          "无限小组课",
+          "每月 2 节私教课",
+          "无限 AI 对话练习",
+          "发音反馈",
+          "含官方认证"
+        ],
+        "cta": "登机"
+      },
+      {
+        "id": "premium",
+        "number": "套餐 Nº 003",
+        "name": "尊享版",
+        "price": "$99",
+        "features": [
+          "包含专业版所有权益，另加：",
+          "无限 1 对 1 课程",
+          "专属私人导师",
+          "含考试备考",
+          "24/7 优先支持"
+        ],
+        "cta": "登机"
+      }
+    ],
+    "faqEyebrow": "练习题",
+    "faqTitle": "常见问题",
+    "faqs": [
+      {
+        "q": "我可以随时取消吗？",
+        "a": "可以，所有套餐均按月计费，你可以随时在账户中取消，没有任何罚金。"
+      },
+      {
+        "q": "我需要有英语基础吗？",
+        "a": "不需要。第一节课前我们会提供免费分级测试，把你安排到合适的小组。"
+      },
+      {
+        "q": "实时课堂是如何进行的？",
+        "a": "小组课最多 6 名学员，通过视频通话进行，每天都有灵活的时间安排。"
+      },
+      {
+        "q": "结课后有证书吗？",
+        "a": "有的，完成每个级别后会获得进度证书，并提供 IELTS、TOEFL 和剑桥考试的官方备考。"
+      }
+    ],
+    "ctaTitle": "预约你的首节免费课程",
+    "ctaNote": "无需承诺，随时可取消",
+    "ctaButton": "查看套餐"
+  },
+  "teacherProfile": {
+    "dossierLabel": "教师档案 · 编号 Nº {{number}}",
+    "bookButton": "预约课程",
+    "messageButton": "发送消息",
+    "similarTitle": "其他教师"
+  }
+}

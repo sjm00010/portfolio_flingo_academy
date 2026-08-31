@@ -1,0 +1,178 @@
+{
+  "languageSwitcher": { "en": "EN", "es": "ES", "zh": "中文" },
+  "nav": {
+    "about": "SOBRE NOSOTROS",
+    "teachers": "PROFESORES",
+    "pricing": "PRECIOS",
+    "cta": "HAZ TU RESERVA"
+  },
+  "hero": {
+    "eyebrow": "ENTRADA Nº 001 — SUSTANTIVO / VERBO",
+    "word": "flingo",
+    "phonetic": "/ˈfliŋ·goh/",
+    "def1": "Aprender inglés hablando desde el primer día, sin miedo a equivocarte.",
+    "def2": "Clases en vivo con profesores reales — no videos grabados.",
+    "ctaButton": "EMPIEZA GRATIS →",
+    "ctaNote": "↳ tu primera clase, gratis",
+    "photoCaption": "Foto: estudiante en videollamada con profesor",
+    "stampLine1": "100%",
+    "stampLine2": "EN VIVO"
+  },
+  "method": {
+    "title": "Índice del método",
+    "count": "3 CAPÍTULOS",
+    "items": [
+      {
+        "title": "Profesores profesionales",
+        "bullets": [
+          "Amplia experiencia docente",
+          "Experiencia con estudiantes internacionales",
+          "Certificaciones profesionales (TEFL/TESOL)"
+        ]
+      },
+      {
+        "title": "Aprendizaje personalizado",
+        "bullets": [
+          "Clases 1:1 (individuales)",
+          "Planes de aprendizaje individuales",
+          "Materiales personalizados",
+          "Seguimiento continuo del progreso"
+        ]
+      },
+      {
+        "title": "Horarios flexibles",
+        "bullets": [
+          "Mañana, tarde y noche",
+          "Clases disponibles los fines de semana",
+          "Compatible con husos horarios de Asia y Europa"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "El significado detrás de Flingo",
+    "lead": "Flingo Academy es más que un nombre. Representa a nuestros fundadores, a nuestros profesores y la convicción de que el idioma crea oportunidades globales.",
+    "items": [
+      {
+        "badge": "F",
+        "title": "El fundador “F” y los profesores filipinos",
+        "desc": "Comprometidos con una educación de inglés de primer nivel, con calidez y profesionalismo."
+      },
+      {
+        "badge": "L",
+        "title": "Louis",
+        "desc": "Nuestro socio de negocio y cofundador, garantizando la excelencia operativa y el éxito de los estudiantes."
+      },
+      {
+        "badge": "Lingo",
+        "title": "Idioma, conexión e intercambio",
+        "desc": "Construyendo puentes entre Asia, Europa y el mundo a través de la comunicación."
+      }
+    ],
+    "mission": {
+      "label": "Nuestra misión",
+      "text": "Ayudar a los estudiantes a comunicarse con confianza en inglés mediante una educación online atractiva, práctica y personalizada."
+    }
+  },
+  "teachers": {
+    "eyebrow": "CUERPO DOCENTE",
+    "title": "Aprende con los mejores",
+    "viewProfile": "Ver perfil"
+  },
+  "cta": {
+    "title": "¿Listo para el siguiente capítulo?",
+    "note": "tu primera clase es gratis, sin tarjeta",
+    "button": "CONTÁCTANOS"
+  },
+  "footer": {
+    "tagline": "Aprende inglés a tu manera — clases en vivo, profesores reales.",
+    "academyTitle": "ACADEMIA",
+    "academyLinks": ["Sobre nosotros", "Profesores", "Precios"],
+    "contactTitle": "CONTACTO",
+    "contact": ["hello@flingoacademy.com", "+52 55 1234 5678"],
+    "copyright": "© 2026 FLINGO ACADEMY — TODOS LOS DERECHOS RESERVADOS"
+  },
+  "pricing": {
+    "eyebrow": "BOLETOS DE ABORDAJE — RUMBO: FLUIDEZ",
+    "title": "Elige tu boleto",
+    "subtitle": "Todos los boletos incluyen tu primera clase gratis. Cancela cuando quieras.",
+    "monthly": "MENSUAL",
+    "annual": "ANUAL",
+    "discount": "(−20%)",
+    "perMonth": "/mes",
+    "plans": [
+      {
+        "id": "starter",
+        "number": "BOLETO Nº 001",
+        "name": "Starter",
+        "price": "$29",
+        "features": [
+          "1 clase grupal/semana",
+          "IA de conversación limitada",
+          "Recursos de autoestudio",
+          "Certificado de progreso"
+        ],
+        "cta": "ABORDAR"
+      },
+      {
+        "id": "pro",
+        "number": "BOLETO Nº 002",
+        "name": "Pro",
+        "price": "$59",
+        "featured": true,
+        "badge": "MÁS ELEGIDO",
+        "features": [
+          "Clases grupales ilimitadas",
+          "2 clases privadas/mes",
+          "IA de conversación ilimitada",
+          "Feedback de pronunciación",
+          "Certificación oficial incluida"
+        ],
+        "cta": "ABORDAR"
+      },
+      {
+        "id": "premium",
+        "number": "BOLETO Nº 003",
+        "name": "Premium",
+        "price": "$99",
+        "features": [
+          "Todo lo de Pro, más:",
+          "Clases 1:1 ilimitadas",
+          "Tutor personal asignado",
+          "Preparación de examen incluida",
+          "Soporte prioritario 24/7"
+        ],
+        "cta": "ABORDAR"
+      }
+    ],
+    "faqEyebrow": "EJERCICIOS",
+    "faqTitle": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "q": "¿Puedo cancelar cuando quiera?",
+        "a": "Sí, todos los boletos son mes a mes y puedes cancelar en cualquier momento desde tu cuenta, sin penalización."
+      },
+      {
+        "q": "¿Necesito experiencia previa con inglés?",
+        "a": "No. Hacemos una prueba de nivel gratuita antes de tu primera clase para ubicarte en el grupo correcto."
+      },
+      {
+        "q": "¿Cómo funcionan las clases en vivo?",
+        "a": "Son clases grupales de máximo 6 alumnos por videollamada, con horarios flexibles todos los días."
+      },
+      {
+        "q": "¿Ofrecen certificado al terminar?",
+        "a": "Sí, recibes un certificado de progreso al completar cada nivel, y preparación oficial para IELTS, TOEFL y Cambridge."
+      }
+    ],
+    "ctaTitle": "Aborda tu primera clase gratis",
+    "ctaNote": "sin compromiso, cancela cuando quieras",
+    "ctaButton": "VER BOLETOS"
+  },
+  "teacherProfile": {
+    "dossierLabel": "DOSSIER DEL PROFESOR · EXPEDIENTE Nº {{number}}",
+    "bookButton": "RESERVAR CLASE",
+    "messageButton": "ENVIAR MENSAJE",
+    "similarTitle": "Otros profesores"
+  }
+}

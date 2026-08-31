@@ -1,0 +1,132 @@
+:root {
+  --color-bg: #f3eee0;
+  --color-paper: #fbf8f0;
+  --color-navy: #1b2a4a;
+  --color-navy-soft: #3b4a68;
+  --color-navy-muted: #9aa6c4;
+  --color-red: #c1443c;
+  --color-red-dark: #9c332c;
+  --color-gold: #d9c08a;
+  --color-green: #3c7a6d;
+  --color-brown: #8a5a2a;
+  --color-plum: #6b2d55;
+  --color-text: #2e3a54;
+  --color-text-muted: #7a7263;
+  --color-border: rgba(27, 42, 74, 0.15);
+  --color-border-strong: rgba(27, 42, 74, 0.3);
+  --font-display: 'Instrument Serif', 'Georgia', serif;
+  --font-body: 'Source Serif 4', 'Georgia', serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-hand: 'Caveat', cursive;
+  --font-hand-readable: 'Patrick Hand', cursive;
+  --font-signature: 'Sacramento', cursive;
+  --max-width: 1200px;
+  font-family: var(--font-body);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.1;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-navy);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-navy);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--color-red);
+  color: var(--color-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 3.5rem;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.5rem;
+}
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.1rem);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.hand {
+  font-family: var(--font-hand);
+}

@@ -1,0 +1,178 @@
+{
+  "languageSwitcher": { "en": "EN", "es": "ES", "zh": "中文" },
+  "nav": {
+    "about": "ABOUT US",
+    "teachers": "TEACHERS",
+    "pricing": "TICKETS",
+    "cta": "BOOK NOW"
+  },
+  "hero": {
+    "eyebrow": "ENTRY Nº 001 — NOUN / VERB",
+    "word": "flingo",
+    "phonetic": "/ˈfliŋ·goh/",
+    "def1": "Learning English by speaking from day one, with no fear of mistakes.",
+    "def2": "Live classes with real teachers — never pre-recorded videos.",
+    "ctaButton": "START FREE →",
+    "ctaNote": "↳ your first class, free",
+    "photoCaption": "Photo: student on a video call with a teacher",
+    "stampLine1": "100%",
+    "stampLine2": "LIVE"
+  },
+  "method": {
+    "title": "Method index",
+    "count": "3 CHAPTERS",
+    "items": [
+      {
+        "title": "Professional Teachers",
+        "bullets": [
+          "Extensive Teaching Experience",
+          "International Student Expertise",
+          "Professional Certifications (TEFL/TESOL)"
+        ]
+      },
+      {
+        "title": "Personalized Learning",
+        "bullets": [
+          "1:1 (Individual) Classes",
+          "Individual Learning Plans",
+          "Customized Materials",
+          "Continuous Progress Monitoring"
+        ]
+      },
+      {
+        "title": "Flexible Scheduling",
+        "bullets": [
+          "Morning, Afternoon & Evening",
+          "Weekend Classes Available",
+          "Timezone-Friendly (Asia & Europe)"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "The Meaning Behind Flingo",
+    "lead": "Flingo Academy is more than just a name. It represents our founders, our educators, and our core belief that language creates global opportunities.",
+    "items": [
+      {
+        "badge": "F",
+        "title": "Founder \"F\" & Filipino Teachers",
+        "desc": "Dedicated to providing world-class English education with warmth and professionalism."
+      },
+      {
+        "badge": "L",
+        "title": "Louis",
+        "desc": "Our business partner and co-founder, ensuring operational excellence and student success."
+      },
+      {
+        "badge": "Lingo",
+        "title": "Language, Connection & Exchange",
+        "desc": "Building bridges between Asia, Europe, and the world through communication."
+      }
+    ],
+    "mission": {
+      "label": "Our Mission",
+      "text": "To help students communicate confidently in English through engaging, practical, and personalized online education."
+    }
+  },
+  "teachers": {
+    "eyebrow": "FACULTY",
+    "title": "Learn with the best",
+    "viewProfile": "View profile"
+  },
+  "cta": {
+    "title": "Ready for the next chapter?",
+    "note": "your first class is free, no card required",
+    "button": "CONTACT US"
+  },
+  "footer": {
+    "tagline": "Live classes, real teachers.",
+    "academyTitle": "ACADEMY",
+    "academyLinks": ["About us", "Teachers", "Pricing"],
+    "contactTitle": "CONTACT",
+    "contact": ["hello@flingoacademy.com", "+52 55 1234 5678"],
+    "copyright": "© 2026 FLINGO ACADEMY — ALL RIGHTS RESERVED"
+  },
+  "pricing": {
+    "eyebrow": "BOARDING TICKETS — DESTINATION: FLUENCY",
+    "title": "Choose your ticket",
+    "subtitle": "Every ticket includes your first class free. Cancel anytime.",
+    "monthly": "MONTHLY",
+    "annual": "ANNUAL",
+    "discount": "(−20%)",
+    "perMonth": "/mo",
+    "plans": [
+      {
+        "id": "starter",
+        "number": "TICKET Nº 001",
+        "name": "Starter",
+        "price": "$29",
+        "features": [
+          "1 group class/week",
+          "Limited AI conversation",
+          "Self-study resources",
+          "Progress certificate"
+        ],
+        "cta": "BOARD"
+      },
+      {
+        "id": "pro",
+        "number": "TICKET Nº 002",
+        "name": "Pro",
+        "price": "$59",
+        "featured": true,
+        "badge": "MOST CHOSEN",
+        "features": [
+          "Unlimited group classes",
+          "2 private classes/month",
+          "Unlimited AI conversation",
+          "Pronunciation feedback",
+          "Official certification included"
+        ],
+        "cta": "BOARD"
+      },
+      {
+        "id": "premium",
+        "number": "TICKET Nº 003",
+        "name": "Premium",
+        "price": "$99",
+        "features": [
+          "Everything in Pro, plus:",
+          "Unlimited 1:1 classes",
+          "Dedicated personal tutor",
+          "Exam prep included",
+          "24/7 priority support"
+        ],
+        "cta": "BOARD"
+      }
+    ],
+    "faqEyebrow": "EXERCISES",
+    "faqTitle": "Frequently asked questions",
+    "faqs": [
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Yes, every ticket is month-to-month and you can cancel anytime from your account, with no penalty."
+      },
+      {
+        "q": "Do I need prior English experience?",
+        "a": "No. We run a free placement test before your first class to put you in the right group."
+      },
+      {
+        "q": "How do live classes work?",
+        "a": "Groups of up to 6 students over video call, with flexible schedules every day."
+      },
+      {
+        "q": "Do you offer a certificate?",
+        "a": "Yes, you get a progress certificate after each level, plus official prep for IELTS, TOEFL and Cambridge."
+      }
+    ],
+    "ctaTitle": "Board your first free class",
+    "ctaNote": "no commitment, cancel anytime",
+    "ctaButton": "VIEW TICKETS"
+  },
+  "teacherProfile": {
+    "dossierLabel": "TEACHER DOSSIER · FILE Nº {{number}}",
+    "bookButton": "BOOK A CLASS",
+    "messageButton": "SEND MESSAGE",
+    "similarTitle": "Other teachers"
+  }
+}
