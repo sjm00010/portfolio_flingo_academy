@@ -1,0 +1,112 @@
+.founders__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+/* .founder-card* también lo reutiliza Team.jsx */
+.founder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--color-paper);
+  padding: 1.6rem 1.2rem 0;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 20px -14px rgba(27, 42, 74, 0.4);
+  overflow: hidden;
+}
+
+.founder-card__photo {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.founder-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-card__name {
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  color: var(--color-navy);
+  margin-bottom: 0.2rem;
+}
+
+.founder-card__role {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.7rem;
+}
+
+.founder-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  padding-bottom: 1.6rem;
+}
+
+.founder-card__footer {
+  display: flex;
+  width: calc(100% + 2.4rem);
+  margin: auto -1.2rem 0;
+}
+
+.founder-card__contact {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.75rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  transition: filter 0.2s ease;
+}
+
+.founder-card__contact svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.founder-card__contact:hover {
+  filter: brightness(1.1);
+}
+
+.founder-card__contact--whatsapp {
+  background: #128c7e;
+}
+
+.founder-card__contact--wechat {
+  background: #07c160;
+}
+
+@media (min-width: 700px) {
+  .founders__grid {
+    gap: 2.5rem;
+  }
+
+  .founder-card {
+    padding: 2.2rem 1.8rem 0;
+  }
+
+  .founder-card__footer {
+    width: calc(100% + 3.6rem);
+    margin: auto -1.8rem 0;
+  }
+}

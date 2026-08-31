@@ -1,0 +1,157 @@
+.contact {
+  background-color: #efe2c3;
+  border-top: 3px solid var(--color-navy);
+  border-bottom: 3px solid var(--color-navy);
+}
+
+.contact__lead {
+  max-width: 34rem;
+  margin: 0.8rem auto 0;
+  color: var(--color-text-muted);
+}
+
+.contact__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+  margin: 3.2rem auto 0;
+}
+
+.contact__panel {
+  position: relative;
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem 1.6rem 1.8rem;
+  background: var(--color-paper);
+  border-radius: 2px;
+  transform: rotate(-1.2deg);
+  box-shadow: 0 18px 34px -16px rgba(27, 42, 74, 0.4);
+}
+
+.contact__tape {
+  position: absolute;
+  top: -0.9rem;
+  width: 70px;
+  height: 26px;
+  background: var(--color-gold);
+  opacity: 0.85;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.contact__tape--left {
+  left: 8%;
+  transform: rotate(-6deg);
+}
+
+.contact__tape--right {
+  right: 10%;
+  transform: rotate(5deg);
+}
+
+.contact__panel-title {
+  font-family: var(--font-hand-readable);
+  font-size: 1.4rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.contact__steps {
+  margin: 0 0 1.4rem;
+  padding-left: 1.2rem;
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: var(--color-navy-soft);
+}
+
+.contact__steps li + li {
+  margin-top: 0.3rem;
+}
+
+.contact__notes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.contact__note {
+  --tilt: -2deg;
+  flex: 0 0 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.1rem 1rem 1.3rem;
+  background: #fdf3b7;
+  border-radius: 2px;
+  transform: rotate(var(--tilt));
+  box-shadow: 0 12px 22px -12px rgba(27, 42, 74, 0.45);
+}
+
+.contact__note--whatsapp {
+  --tilt: 2deg;
+  background: #d6f3ee;
+}
+
+.contact__note--email {
+  --tilt: -3deg;
+  background: #e4e9f7;
+}
+
+.contact__note-qr {
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 2px;
+  line-height: 0;
+}
+
+.contact__note .contact__button {
+  width: 100%;
+  justify-content: center;
+}
+
+.contact__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.75rem 1.1rem;
+  border-radius: 3px;
+  transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.contact__button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.contact__button svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.contact__button--wechat {
+  background: #07c160;
+}
+
+.contact__button--whatsapp {
+  background: #128c7e;
+}
+
+.contact__button--email {
+  background: var(--color-navy);
+}
+
+

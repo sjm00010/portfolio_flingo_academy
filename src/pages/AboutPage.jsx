@@ -5,6 +5,8 @@ import { SUPPORTED_LANGUAGES } from '../i18n';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import About from '../components/sections/About';
+import Founders from '../components/sections/Founders';
+import Team from '../components/sections/Team';
 import CtaBanner from '../components/sections/CtaBanner';
 import LanguageRedirect from '../router/LanguageRedirect';
 
@@ -28,6 +30,8 @@ function AboutPage() {
       <Navbar />
       <main>
         <About />
+        <Founders />
+        <Team />
         <CtaBanner />
       </main>
       <Footer />

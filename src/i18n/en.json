@@ -1,6 +1,7 @@
 {
   "languageSwitcher": { "en": "EN", "es": "ES", "zh": "中文" },
   "nav": {
+    "home": "HOME",
     "about": "ABOUT US",
     "teachers": "TEACHERS",
     "pricing": "TICKETS",
@@ -72,12 +73,55 @@
     "mission": {
       "label": "Our Mission",
       "text": "To help students communicate confidently in English through engaging, practical, and personalized online education."
+    },
+    "founders": {
+      "eyebrow": "THE FOUNDERS",
+      "title": "Who's behind Flingo",
+      "contactWhatsapp": "Contact via WhatsApp",
+      "contactWechat": "Contact via WeChat",
+      "list": [
+        {
+          "name": "Teacher F",
+          "role": "Founder & Senior ESL Teacher",
+          "desc": "A licensed professional teacher and experienced ESL educator, combining classroom and online teaching to help students from all cultures build real communication skills. As part of Flingo Academy's founding team, also helps shape our teaching methods and grow a global learning community — making every lesson feel dynamic, supportive, and purposeful."
+        },
+        {
+          "name": "Louis (路易)",
+          "role": "Business Partner & Co-founder",
+          "desc": "A dedicated business partner and co-founder, Louis brings a native understanding of the needs of Chinese learners and families to Flingo Academy. He leads business development, client relations, operations, and strategic planning, building bridges between students, parents, and teachers so more learners can access quality English education."
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "OUR TEAM",
+      "title": "Meet our teachers",
+      "bios": {
+        "teacher-cherry": "A dedicated English instructor with 20 years of experience teaching learners of all ages — from children and teenagers to corporate professionals. Cherry tailors every lesson to each student's pace, goals, and background, creating a supportive environment where they feel confident to reach their milestones.",
+        "teacher-diza": "An ESL teacher with 18 years of experience, including over a decade helping students from Korea, China, and Spain reach their language goals — both in office-based schools and flexible home-based teaching. Diza specializes in making English accessible and engaging for every learner, adapting to the unique challenges of each region."
+      }
     }
   },
   "teachers": {
     "eyebrow": "FACULTY",
     "title": "Learn with the best",
     "viewProfile": "View profile"
+  },
+  "contact": {
+    "eyebrow": "GET IN TOUCH",
+    "title": "Book your first class",
+    "lead": "Pick the channel you prefer and we'll get back to you within 24 hours.",
+    "global": {
+      "title": "Contact steps",
+      "step1": "Contact us via {{channel}} or email",
+      "steps": [
+        "Take a free level assessment",
+        "Schedule your trial lesson",
+        "Choose a plan and start learning"
+      ],
+      "whatsapp": "Message us on WhatsApp",
+      "wechat": "Contact via WeChat",
+      "email": "Email us"
+    }
   },
   "cta": {
     "title": "Ready for the next chapter?",
@@ -87,70 +131,89 @@
   "footer": {
     "tagline": "Live classes, real teachers.",
     "academyTitle": "ACADEMY",
-    "academyLinks": ["About us", "Teachers", "Pricing"],
+    "academyLinks": ["Teachers", "Pricing", "About us"],
     "contactTitle": "CONTACT",
-    "contact": ["hello@flingoacademy.com", "+52 55 1234 5678"],
+    "contact": ["villabrozaephraem@gmail.com", "+63 991 799 7375"],
     "copyright": "© 2026 FLINGO ACADEMY — ALL RIGHTS RESERVED"
   },
   "pricing": {
     "eyebrow": "BOARDING TICKETS — DESTINATION: FLUENCY",
     "title": "Choose your ticket",
-    "subtitle": "Every ticket includes your first class free. Cancel anytime.",
-    "monthly": "MONTHLY",
-    "annual": "ANNUAL",
-    "discount": "(−20%)",
-    "perMonth": "/mo",
-    "plans": [
-      {
-        "id": "starter",
-        "number": "TICKET Nº 001",
-        "name": "Starter",
-        "price": "$29",
-        "features": [
-          "1 group class/week",
-          "Limited AI conversation",
-          "Self-study resources",
-          "Progress certificate"
-        ],
-        "cta": "BOARD"
-      },
-      {
-        "id": "pro",
-        "number": "TICKET Nº 002",
-        "name": "Pro",
-        "price": "$59",
-        "featured": true,
-        "badge": "MOST CHOSEN",
-        "features": [
-          "Unlimited group classes",
-          "2 private classes/month",
-          "Unlimited AI conversation",
-          "Pronunciation feedback",
-          "Official certification included"
-        ],
-        "cta": "BOARD"
-      },
-      {
-        "id": "premium",
-        "number": "TICKET Nº 003",
-        "name": "Premium",
-        "price": "$99",
-        "features": [
-          "Everything in Pro, plus:",
-          "Unlimited 1:1 classes",
-          "Dedicated personal tutor",
-          "Exam prep included",
-          "24/7 priority support"
-        ],
-        "cta": "BOARD"
-      }
-    ],
+    "subtitle": "Pay per session or save with a session package. No monthly fees.",
+    "individual": "INDIVIDUAL",
+    "packages": "PACKAGES",
+    "discount": "(free sessions)",
+    "ticketLabel": "TICKET",
+    "singleLessons": {
+      "title": "Single lesson prices",
+      "plans": [
+        {
+          "id": "short",
+          "icon": "⏱️",
+          "name": "25-Minute Lesson",
+          "price": "¥35",
+          "currency": "RMB",
+          "description": "Great for quick practice and busy schedules."
+        },
+        {
+          "id": "normal",
+          "icon": "📚",
+          "name": "55-Minute Lesson (Normal Class)",
+          "price": "¥55",
+          "currency": "RMB",
+          "description": "More time to learn, more time to improve."
+        },
+        {
+          "id": "ielts",
+          "icon": "🎯",
+          "name": "55-Minute IELTS Lesson",
+          "price": "¥80",
+          "currency": "RMB",
+          "description": "For those who only settle for the best."
+        }
+      ]
+    },
+    "packagesSection": {
+      "title": "Value packages",
+      "subtitle": "The more you learn, the more you save",
+      "bestValue": "Best value!",
+      "groups": [
+        {
+          "id": "packageA",
+          "badge": "Package A",
+          "name": "25-Minute Lessons",
+          "tiers": [
+            { "label": "10 Lessons + 1 FREE Lesson", "price": "¥350" },
+            { "label": "30 Lessons + 4 FREE Lessons", "price": "¥1050", "bestValue": true }
+          ]
+        },
+        {
+          "id": "packageB",
+          "badge": "Package B ⭐",
+          "name": "55-Minute Lessons",
+          "featured": true,
+          "tiers": [
+            { "label": "10 Lessons + 1 FREE Lesson", "price": "¥550" },
+            { "label": "30 Lessons + 4 FREE Lessons", "price": "¥1650", "bestValue": true }
+          ]
+        },
+        {
+          "id": "packageC",
+          "badge": "Package C",
+          "name": "IELTS Lessons",
+          "tiers": [
+            { "label": "10 Lessons + 1 FREE Lesson", "price": "¥800" },
+            { "label": "30 Lessons + 4 FREE Lessons", "price": "¥2400", "bestValue": true }
+          ]
+        }
+      ]
+    },
     "faqEyebrow": "EXERCISES",
     "faqTitle": "Frequently asked questions",
     "faqs": [
       {
         "q": "Can I cancel anytime?",
-        "a": "Yes, every ticket is month-to-month and you can cancel anytime from your account, with no penalty."
+        "a": "Yes, you pay per session or per session package, no monthly fees or commitment: use your sessions at your own pace."
       },
       {
         "q": "Do I need prior English experience?",

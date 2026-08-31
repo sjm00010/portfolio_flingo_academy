@@ -1,0 +1,58 @@
+.pricing-hero {
+  text-align: center;
+  padding: 3.5rem 0 1rem;
+}
+
+.pricing-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  margin: 0.5rem 0 0.8rem;
+}
+
+.pricing-hero p {
+  color: var(--color-text-muted);
+  max-width: 30rem;
+  margin: 0 auto 1.6rem;
+}
+
+.pricing-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1.5px dashed var(--color-border-strong);
+  padding: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.pricing-toggle span {
+  padding: 0.5rem 1.1rem;
+  color: var(--color-navy-soft);
+}
+
+.pricing-toggle span.is-active {
+  background: var(--color-navy);
+  color: var(--color-bg);
+}
+
+.pricing-toggle .discount {
+  color: var(--color-green);
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+.pricing-packages__subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin: -0.6rem 0 1.8rem;
+}
+
+@media (min-width: 700px) {
+  .pricing__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -6,6 +6,7 @@ export const TEACHERS = [
     initials: 'F',
     number: '001',
     photo: '/assets/teachers/teache_f.png',
+    tags: ['TEFL Certified', 'IELTS Speaking Coach', 'Business English'],
   },
   {
     id: 'teacher-cherry',
@@ -14,6 +15,7 @@ export const TEACHERS = [
     initials: 'C',
     number: '002',
     photo: '/assets/teachers/teacher_cherry.png',
+    tags: ['TESOL Certified', 'All Ages', 'Corporate Training'],
   },
   {
     id: 'teacher-diza',
@@ -22,6 +24,7 @@ export const TEACHERS = [
     initials: 'D',
     number: '003',
     photo: '/assets/teachers/teacher_diza.png',
+    tags: ['TESOL Certified', 'TEYL Certified', 'Korea, China & Spain Specialist'],
   },
 ];
 

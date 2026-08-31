@@ -1,0 +1,137 @@
+.hero {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 28px,
+    var(--color-border) 29px
+  );
+  padding: 3rem 0 3.5rem;
+  overflow: hidden;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.hero__word {
+  font-size: clamp(3.2rem, 12vw, 5.5rem);
+  line-height: 0.95;
+  margin-bottom: 0.3rem;
+}
+
+.hero__phonetic {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero__def {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 32rem;
+  margin-bottom: 0.7rem;
+}
+
+.hero__def b {
+  color: var(--color-red);
+}
+
+.hero__cta-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 1.5rem 0 1.1rem;
+}
+
+.hero__cta-wrap svg {
+  position: absolute;
+  left: 6px;
+  bottom: -14px;
+  width: calc(100% - 12px);
+  height: 18px;
+}
+
+.hero__note {
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  color: var(--color-red);
+  margin-left: 0.4rem;
+  display: block;
+}
+
+.hero__image-wrap {
+  padding-top: 0.5rem;
+}
+
+.hero__photo-frame {
+  position: relative;
+  margin-bottom: 2.4rem;
+  padding-top: 14px;
+}
+
+.hero__tape {
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: 26px;
+  background: var(--color-gold);
+  opacity: 0.85;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.hero__tape--left {
+  left: 15%;
+  transform: rotate(-6deg);
+}
+
+.hero__tape--right {
+  right: 18%;
+  transform: rotate(5deg);
+}
+
+.hero__photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transform: rotate(-1.3deg);
+  box-shadow: 0 18px 40px -12px rgba(27, 42, 74, 0.35);
+  border: 6px solid #fff;
+  background: linear-gradient(135deg, var(--color-navy-muted), var(--color-navy));
+}
+
+.hero__stamp {
+  position: absolute;
+  bottom: -1.6rem;
+  right: 1rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background: var(--color-red);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  transform: rotate(8deg);
+  border: 2px dashed rgba(251, 248, 240, 0.6);
+  box-shadow: 0 10px 24px -6px rgba(27, 42, 74, 0.4);
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .hero__grid {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 3.5rem;
+  }
+}

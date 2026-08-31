@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import './Method.css';
 
 const ICONS = [
   // graduation cap

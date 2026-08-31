@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import './Faq.css';
 
 function Faq() {
   const { t } = useTranslation();

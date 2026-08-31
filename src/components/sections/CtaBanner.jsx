@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
+import './CtaBanner.css';
 
 function CtaBanner({ titleKey = 'cta.title', noteKey = 'cta.note', buttonKey = 'cta.button', href }) {
   const { t } = useTranslation();

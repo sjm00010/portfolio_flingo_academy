@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import './About.css';
 
 const BADGE_COLORS = ['f', 'l', 'ingo'];
 

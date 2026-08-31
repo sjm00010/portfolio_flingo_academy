@@ -1,8 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import { TEACHERS } from '../../data/teachers';
+import './Teachers.css';
 
 const PIN_COLORS = ['red', 'navy', 'green', 'brown'];
+
+const HOVER_ANIMATIONS = {
+  'teacher-f': 'teacher-tile--pop',
+  'teacher-cherry': 'teacher-tile--wobble',
+  'teacher-diza': 'teacher-tile--bounce',
+};
 
 function Teachers({ id }) {
   const { t } = useTranslation();
@@ -19,11 +26,12 @@ function Teachers({ id }) {
         <div className="teachers__grid">
           {TEACHERS.map((teacher, index) => {
             const pin = PIN_COLORS[index % PIN_COLORS.length];
+            const hoverAnimation = HOVER_ANIMATIONS[teacher.id] ?? '';
 
             return (
               <Link
                 to={`/${lang}/teachers/${teacher.id}`}
-                className={`teacher-tile teacher-tile--polaroid teacher-tile--pin-${pin}`}
+                className={`teacher-tile teacher-tile--polaroid teacher-tile--pin-${pin} ${hoverAnimation}`}
                 key={teacher.id}
               >
                 <span className="teacher-tile__pin" aria-hidden="true" />

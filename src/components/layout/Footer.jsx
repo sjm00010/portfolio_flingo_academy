@@ -1,7 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
+import { WHATSAPP_LINK, WECHAT_LINK, CONTACT_EMAIL, CONTACT_PHONE } from '../../constants/contact';
+import './Footer.css';
 
-const ACADEMY_LINK_PATHS = ['about', 'teachers', 'pricing'];
+const ACADEMY_LINK_PATHS = ['teachers', 'pricing', 'about'];
+const CONTACT_LINKS = [`mailto:${CONTACT_EMAIL}`, `tel:${CONTACT_PHONE}`];
 
 function Footer() {
   const { t } = useTranslation();
@@ -33,9 +36,9 @@ function Footer() {
           <div>
             <h4>{t('footer.contactTitle')}</h4>
             <ul>
-              {contact.map((line) => (
+              {contact.map((line, index) => (
                 <li key={line}>
-                  <span>{line}</span>
+                  <a href={CONTACT_LINKS[index]}>{line}</a>
                 </li>
               ))}
             </ul>
@@ -44,8 +47,12 @@ function Footer() {
         <div className="footer__bottom">
           <span>{t('footer.copyright')}</span>
           <div className="footer__social">
-            <a href="#">WHATSAPP</a>
-            <a href="#">WECHAT</a>
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              WHATSAPP
+            </a>
+            <a href={WECHAT_LINK} target="_blank" rel="noopener noreferrer">
+              WECHAT
+            </a>
           </div>
         </div>
       </div>

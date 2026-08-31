@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, useParams, useNavigate } from 'react-router-dom';
 import { SUPPORTED_LANGUAGES } from '../../i18n';
+import './Navbar.css';
 
 function Navbar() {
   const { t } = useTranslation();
@@ -15,9 +16,10 @@ function Navbar() {
   };
 
   const links = [
-    { to: `/${lang}/about`, label: t('nav.about') },
+    { to: `/${lang}`, label: t('nav.home'), end: true },
     { to: `/${lang}/teachers`, label: t('nav.teachers') },
     { to: `/${lang}/pricing`, label: t('nav.pricing') },
+    { to: `/${lang}/about`, label: t('nav.about') },
   ];
 
   return (

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
+import './Hero.css';
 
 function Hero() {
   const { t } = useTranslation();

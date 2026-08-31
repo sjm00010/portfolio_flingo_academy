@@ -3,9 +3,11 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SUPPORTED_LANGUAGES } from '../i18n';
 import { getTeacherById, getOtherTeachers } from '../data/teachers';
+import { WHATSAPP_LINK, WECHAT_LINK } from '../constants/contact';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import LanguageRedirect from '../router/LanguageRedirect';
+import './TeacherProfilePage.css';
 
 function TeacherProfilePage() {
   const { lang, teacherId } = useParams();
@@ -28,6 +30,7 @@ function TeacherProfilePage() {
   }
 
   const otherTeachers = getOtherTeachers(teacher.id);
+  const messageLink = lang === 'zh' ? WECHAT_LINK : WHATSAPP_LINK;
 
   return (
     <>
@@ -46,11 +49,24 @@ function TeacherProfilePage() {
               <h1 className="dossier__name">{teacher.name}</h1>
               <div className="dossier__subtitle mono">{teacher.role}</div>
 
+              {teacher.tags.length > 0 && (
+                <div className="dossier__tags">
+                  {teacher.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+              )}
+
               <div className="dossier__actions">
-                <a href="#" className="btn btn--primary">
+                <Link to={`/${lang}/pricing`} className="btn btn--primary">
                   {t('teacherProfile.bookButton')}
-                </a>
-                <a href="#" className="btn btn--ghost">
+                </Link>
+                <a
+                  href={messageLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn--ghost"
+                >
                   {t('teacherProfile.messageButton')}
                 </a>
               </div>

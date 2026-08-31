@@ -6,8 +6,8 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/sections/Hero';
 import Method from '../components/sections/Method';
-import About from '../components/sections/About';
 import Teachers from '../components/sections/Teachers';
+import Contact from '../components/sections/Contact';
 import CtaBanner from '../components/sections/CtaBanner';
 import LanguageRedirect from '../router/LanguageRedirect';
 
@@ -32,8 +32,8 @@ function HomePage() {
       <main>
         <Hero />
         <Method />
-        <About id="about" />
         <Teachers id="teachers" />
+        <Contact id="contact" />
         <CtaBanner />
       </main>
       <Footer />

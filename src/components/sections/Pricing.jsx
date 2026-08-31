@@ -1,10 +1,28 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import TicketCard from '../ui/TicketCard';
+import './Pricing.css';
+
+const BRAND = 'FLINGO ACADEMY';
+
+const SINGLE_LESSON_VARIANTS = {
+  short: 'green',
+  normal: 'navy',
+  ielts: 'red',
+};
+
+const PACKAGE_VARIANTS = {
+  packageA: 'green',
+  packageB: 'navy',
+  packageC: 'red',
+};
 
 function Pricing({ id }) {
   const { t } = useTranslation();
-  const plans = t('pricing.plans', { returnObjects: true });
-  const [billing, setBilling] = useState('monthly');
+  const singleLessons = t('pricing.singleLessons', { returnObjects: true });
+  const packagesSection = t('pricing.packagesSection', { returnObjects: true });
+  const ticketLabel = t('pricing.ticketLabel');
+  const [billing, setBilling] = useState('individual');
 
   return (
     <section className="section" id={id}>
@@ -15,53 +33,60 @@ function Pricing({ id }) {
           <p>{t('pricing.subtitle')}</p>
           <div className="pricing-toggle">
             <span
-              className={billing === 'monthly' ? 'is-active' : ''}
-              onClick={() => setBilling('monthly')}
+              className={billing === 'individual' ? 'is-active' : ''}
+              onClick={() => setBilling('individual')}
               role="button"
               tabIndex={0}
             >
-              {t('pricing.monthly')}
+              {t('pricing.individual')}
             </span>
             <span
-              className={billing === 'annual' ? 'is-active' : ''}
-              onClick={() => setBilling('annual')}
+              className={billing === 'packages' ? 'is-active' : ''}
+              onClick={() => setBilling('packages')}
               role="button"
               tabIndex={0}
               style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
             >
-              {t('pricing.annual')} <span className="discount">{t('pricing.discount')}</span>
+              {t('pricing.packages')} <span className="discount">{t('pricing.discount')}</span>
             </span>
           </div>
         </div>
 
-        <div className="pricing__grid">
-          {plans.map((plan) => (
-            <div
-              className={`pricing-card ${plan.featured ? 'pricing-card--featured' : ''}`}
-              key={plan.id}
-            >
-              {plan.badge && <span className="pricing-card__badge">{plan.badge}</span>}
-              <div className="pricing-card__eyebrow mono">{plan.number}</div>
-              <h3 className="pricing-card__name">{plan.name}</h3>
-              <div className="pricing-card__price">
-                {plan.price}
-                <span> {t('pricing.perMonth')}</span>
-              </div>
-              <div className="pricing-card__divider" />
-              <div className="pricing-card__features">
-                {plan.features.map((feature) => (
-                  <div key={feature}>✓ {feature}</div>
-                ))}
-              </div>
-              <a
-                href="#"
-                className={`btn btn--full ${plan.featured ? 'btn--light' : 'btn--ghost'}`}
-              >
-                {plan.cta}
-              </a>
+        {billing === 'individual' ? (
+          <div className="pricing__grid">
+            {singleLessons.plans.map((plan) => (
+              <TicketCard
+                key={plan.id}
+                variant={SINGLE_LESSON_VARIANTS[plan.id]}
+                brand={BRAND}
+                eyebrow={ticketLabel}
+                icon={plan.icon}
+                title={plan.name}
+                price={plan.price}
+                currency={plan.currency}
+                description={plan.description}
+              />
+            ))}
+          </div>
+        ) : (
+          <>
+            <p className="pricing-packages__subtitle">{packagesSection.subtitle}</p>
+            <div className="pricing__grid">
+              {packagesSection.groups.map((group) => (
+                <TicketCard
+                  key={group.id}
+                  variant={PACKAGE_VARIANTS[group.id]}
+                  featured={group.featured}
+                  brand={BRAND}
+                  eyebrow={group.badge}
+                  title={group.name}
+                  tiers={group.tiers}
+                  bestValueLabel={packagesSection.bestValue}
+                />
+              ))}
             </div>
-          ))}
-        </div>
+          </>
+        )}
       </div>
     </section>
   );

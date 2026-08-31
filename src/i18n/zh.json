@@ -1,6 +1,7 @@
 {
   "languageSwitcher": { "en": "EN", "es": "ES", "zh": "中文" },
   "nav": {
+    "home": "首页",
     "about": "关于我们",
     "teachers": "教师",
     "pricing": "套餐",
@@ -59,12 +60,55 @@
     "mission": {
       "label": "我们的使命",
       "text": "通过生动、实用且个性化的在线教育，帮助学生自信地用英语交流。"
+    },
+    "founders": {
+      "eyebrow": "创始人",
+      "title": "Flingo 背后的人",
+      "contactWhatsapp": "通过 WhatsApp 联系",
+      "contactWechat": "通过微信联系",
+      "list": [
+        {
+          "name": "Teacher F",
+          "role": "创始人兼资深ESL教师",
+          "desc": "持证专业教师及资深ESL教育者，融合线下课堂与在线教学经验，帮助来自不同文化背景的学生建立真正的沟通能力。作为Flingo Academy的创始团队成员，也参与塑造我们的教学方法，共同建设全球学习社区，让每一堂课都充满活力、支持感与明确的目标。"
+        },
+        {
+          "name": "Louis (路易)",
+          "role": "业务合伙人兼联合创始人",
+          "desc": "Louis 是 Flingo Academy 的联合创始人和重要合作伙伴，深刻理解中国学生和家长的需求。他负责业务拓展、客户关系管理、运营支持及战略规划，致力于在学生、家长与教师之间搭建桥梁，让更多学习者享受优质的英语教育。"
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "我们的团队",
+      "title": "认识我们的教师",
+      "bios": {
+        "teacher-cherry": "拥有20年教学经验的资深英语教师，教授对象涵盖儿童、青少年及企业专业人士。Cherry 善于根据每位学生的学习节奏、目标和文化背景量身定制课程，营造支持性强、氛围融洽的学习环境，帮助学生自信地实现学习目标。",
+        "teacher-diza": "拥有18年教学经验的ESL教师，十多年来帮助来自韩国、中国和西班牙的学生实现语言目标，教学经验涵盖实体学校与灵活的居家教学模式。Diza 擅长让英语学习对每一位学生都变得轻松有趣，并根据不同地区学生面临的独特挑战调整教学方式。"
+      }
     }
   },
   "teachers": {
     "eyebrow": "师资团队",
     "title": "跟最好的老师学习",
     "viewProfile": "查看资料"
+  },
+  "contact": {
+    "eyebrow": "联系我们",
+    "title": "预约你的第一节课",
+    "lead": "选择你喜欢的联系方式，我们会在24小时内回复你。",
+    "global": {
+      "title": "联系步骤",
+      "step1": "通过 {{channel}} 或邮箱联系我们",
+      "steps": [
+        "参加免费分级测试",
+        "预约试听课",
+        "选择套餐，开始学习"
+      ],
+      "whatsapp": "通过 WhatsApp 联系",
+      "wechat": "通过微信联系",
+      "email": "发送邮件"
+    }
   },
   "cta": {
     "title": "准备好开启下一章了吗？",
@@ -74,65 +118,89 @@
   "footer": {
     "tagline": "用你的方式学英语——实时课堂，真人教师。",
     "academyTitle": "学院",
-    "academyLinks": ["关于我们", "教师", "价格"],
+    "academyLinks": ["教师", "价格", "关于我们"],
     "contactTitle": "联系我们",
-    "contact": ["hello@flingoacademy.com", "+52 55 1234 5678"],
+    "contact": ["villabrozaephraem@gmail.com", "+63 991 799 7375"],
     "copyright": "© 2026 FLINGO ACADEMY — 保留所有权利"
   },
   "pricing": {
     "eyebrow": "登机套餐 — 目的地：流利英语",
     "title": "选择你的套餐",
-    "subtitle": "所有套餐均含首节免费课程，随时可取消。",
-    "monthly": "月付",
-    "annual": "年付",
-    "discount": "（−20%）",
-    "perMonth": "/月",
-    "plans": [
-      {
-        "id": "starter",
-        "number": "套餐 Nº 001",
-        "name": "入门版",
-        "price": "$29",
-        "features": ["每周 1 节小组课", "有限 AI 对话练习", "自学资源", "进度证书"],
-        "cta": "登机"
-      },
-      {
-        "id": "pro",
-        "number": "套餐 Nº 002",
-        "name": "专业版",
-        "price": "$59",
-        "featured": true,
-        "badge": "最受欢迎",
-        "features": [
-          "无限小组课",
-          "每月 2 节私教课",
-          "无限 AI 对话练习",
-          "发音反馈",
-          "含官方认证"
-        ],
-        "cta": "登机"
-      },
-      {
-        "id": "premium",
-        "number": "套餐 Nº 003",
-        "name": "尊享版",
-        "price": "$99",
-        "features": [
-          "包含专业版所有权益，另加：",
-          "无限 1 对 1 课程",
-          "专属私人导师",
-          "含考试备考",
-          "24/7 优先支持"
-        ],
-        "cta": "登机"
-      }
-    ],
+    "subtitle": "按次付费或购买课程包更划算，无需按月付费。",
+    "individual": "单次课程",
+    "packages": "课程包",
+    "discount": "（附赠课程）",
+    "ticketLabel": "票",
+    "singleLessons": {
+      "title": "单次课程价格",
+      "plans": [
+        {
+          "id": "short",
+          "icon": "⏱️",
+          "name": "25 分钟课程",
+          "price": "¥35",
+          "currency": "RMB",
+          "description": "适合快速练习和繁忙的日程安排！"
+        },
+        {
+          "id": "normal",
+          "icon": "📚",
+          "name": "55 分钟课程（常规课）",
+          "price": "¥55",
+          "currency": "RMB",
+          "description": "更长的学习时间，更多的进步空间！"
+        },
+        {
+          "id": "ielts",
+          "icon": "🎯",
+          "name": "55 分钟 IELTS 课程",
+          "price": "¥80",
+          "currency": "RMB",
+          "description": "只为追求最好的你。"
+        }
+      ]
+    },
+    "packagesSection": {
+      "title": "超值课程包",
+      "subtitle": "学得越多，省得越多！",
+      "bestValue": "最划算！",
+      "groups": [
+        {
+          "id": "packageA",
+          "badge": "课程包 A",
+          "name": "25 分钟课程",
+          "tiers": [
+            { "label": "10 节课 + 1 节免费课", "price": "¥350" },
+            { "label": "30 节课 + 4 节免费课", "price": "¥1050", "bestValue": true }
+          ]
+        },
+        {
+          "id": "packageB",
+          "badge": "课程包 B ⭐",
+          "name": "55 分钟课程",
+          "featured": true,
+          "tiers": [
+            { "label": "10 节课 + 1 节免费课", "price": "¥550" },
+            { "label": "30 节课 + 4 节免费课", "price": "¥1650", "bestValue": true }
+          ]
+        },
+        {
+          "id": "packageC",
+          "badge": "课程包 C",
+          "name": "IELTS 课程",
+          "tiers": [
+            { "label": "10 节课 + 1 节免费课", "price": "¥800" },
+            { "label": "30 节课 + 4 节免费课", "price": "¥2400", "bestValue": true }
+          ]
+        }
+      ]
+    },
     "faqEyebrow": "练习题",
     "faqTitle": "常见问题",
     "faqs": [
       {
         "q": "我可以随时取消吗？",
-        "a": "可以，所有套餐均按月计费，你可以随时在账户中取消，没有任何罚金。"
+        "a": "可以，按次或按课程包付费，无需按月付费，也没有任何合约限制，按自己的节奏使用课程。"
       },
       {
         "q": "我需要有英语基础吗？",

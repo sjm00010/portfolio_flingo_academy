@@ -1,9 +1,10 @@
 {
   "languageSwitcher": { "en": "EN", "es": "ES", "zh": "中文" },
   "nav": {
+    "home": "INICIO",
     "about": "SOBRE NOSOTROS",
     "teachers": "PROFESORES",
-    "pricing": "PRECIOS",
+    "pricing": "BILLETES",
     "cta": "HAZ TU RESERVA"
   },
   "hero": {
@@ -72,12 +73,55 @@
     "mission": {
       "label": "Nuestra misión",
       "text": "Ayudar a los estudiantes a comunicarse con confianza en inglés mediante una educación online atractiva, práctica y personalizada."
+    },
+    "founders": {
+      "eyebrow": "LOS FUNDADORES",
+      "title": "Quiénes están detrás de Flingo",
+      "contactWhatsapp": "Contactar por WhatsApp",
+      "contactWechat": "Contactar por WeChat",
+      "list": [
+        {
+          "name": "Teacher F",
+          "role": "Fundador & profesor senior de ESL",
+          "desc": "Docente profesional con certificación oficial y amplia experiencia en la enseñanza de inglés como lengua extranjera (ESL), combinando clases presenciales y online para ayudar a estudiantes de distintas culturas a comunicarse con confianza. Como parte del equipo fundador de Flingo Academy, contribuye a definir nuestros métodos de enseñanza y a construir una comunidad de aprendizaje global, para que cada clase se sienta dinámica, cercana y con un propósito claro."
+        },
+        {
+          "name": "Louis (路易)",
+          "role": "Socio de negocio & CO-Fundador",
+          "desc": "Socio de negocio y cofundador dedicado, Louis aporta un conocimiento nativo de las necesidades de los estudiantes y familias chinas. Lidera el desarrollo de negocio, la relación con clientes, la operación y la planificación estratégica, construyendo puentes entre estudiantes, familias y profesores para que más personas accedan a una educación de inglés de calidad."
+        }
+      ]
+    },
+    "team": {
+      "eyebrow": "NUESTRO EQUIPO",
+      "title": "Conoce a nuestros profesores",
+      "bios": {
+        "teacher-cherry": "Instructora de inglés con 20 años de experiencia enseñando a estudiantes de todas las edades, desde niños y adolescentes hasta profesionales corporativos. Cherry adapta cada clase al ritmo, los objetivos y el contexto cultural de cada estudiante, creando un ambiente de aprendizaje cercano y efectivo.",
+        "teacher-diza": "Docente de inglés (ESL) con 18 años de experiencia, más de una década ayudando a estudiantes de Corea, China y España a alcanzar sus objetivos con el idioma, tanto en escuelas presenciales como en clases flexibles desde casa. Diza se especializa en hacer el inglés accesible y motivador para cada estudiante, adaptándose a los retos particulares de cada región."
+      }
     }
   },
   "teachers": {
     "eyebrow": "CUERPO DOCENTE",
     "title": "Aprende con los mejores",
     "viewProfile": "Ver perfil"
+  },
+  "contact": {
+    "eyebrow": "CONTACTO",
+    "title": "Reserva tu primera clase",
+    "lead": "Elige el canal que prefieras y te responderemos en menos de 24 horas.",
+    "global": {
+      "title": "Pasos de contacto",
+      "step1": "Contáctanos por {{channel}} o email",
+      "steps": [
+        "Haz una prueba de nivel gratuita",
+        "Agenda tu clase de prueba",
+        "Elige tu plan y empieza a aprender"
+      ],
+      "whatsapp": "Escríbenos por WhatsApp",
+      "wechat": "Contactar por WeChat",
+      "email": "Escríbenos por email"
+    }
   },
   "cta": {
     "title": "¿Listo para el siguiente capítulo?",
@@ -87,70 +131,89 @@
   "footer": {
     "tagline": "Aprende inglés a tu manera — clases en vivo, profesores reales.",
     "academyTitle": "ACADEMIA",
-    "academyLinks": ["Sobre nosotros", "Profesores", "Precios"],
+    "academyLinks": ["Profesores", "Billetes", "Sobre nosotros"],
     "contactTitle": "CONTACTO",
-    "contact": ["hello@flingoacademy.com", "+52 55 1234 5678"],
+    "contact": ["villabrozaephraem@gmail.com", "+63 991 799 7375"],
     "copyright": "© 2026 FLINGO ACADEMY — TODOS LOS DERECHOS RESERVADOS"
   },
   "pricing": {
-    "eyebrow": "BOLETOS DE ABORDAJE — RUMBO: FLUIDEZ",
-    "title": "Elige tu boleto",
-    "subtitle": "Todos los boletos incluyen tu primera clase gratis. Cancela cuando quieras.",
-    "monthly": "MENSUAL",
-    "annual": "ANUAL",
-    "discount": "(−20%)",
-    "perMonth": "/mes",
-    "plans": [
-      {
-        "id": "starter",
-        "number": "BOLETO Nº 001",
-        "name": "Starter",
-        "price": "$29",
-        "features": [
-          "1 clase grupal/semana",
-          "IA de conversación limitada",
-          "Recursos de autoestudio",
-          "Certificado de progreso"
-        ],
-        "cta": "ABORDAR"
-      },
-      {
-        "id": "pro",
-        "number": "BOLETO Nº 002",
-        "name": "Pro",
-        "price": "$59",
-        "featured": true,
-        "badge": "MÁS ELEGIDO",
-        "features": [
-          "Clases grupales ilimitadas",
-          "2 clases privadas/mes",
-          "IA de conversación ilimitada",
-          "Feedback de pronunciación",
-          "Certificación oficial incluida"
-        ],
-        "cta": "ABORDAR"
-      },
-      {
-        "id": "premium",
-        "number": "BOLETO Nº 003",
-        "name": "Premium",
-        "price": "$99",
-        "features": [
-          "Todo lo de Pro, más:",
-          "Clases 1:1 ilimitadas",
-          "Tutor personal asignado",
-          "Preparación de examen incluida",
-          "Soporte prioritario 24/7"
-        ],
-        "cta": "ABORDAR"
-      }
-    ],
+    "eyebrow": "BILLETES DE ABORDAJE — RUMBO: FLUIDEZ",
+    "title": "Elige tu billete",
+    "subtitle": "Paga por sesión o ahorra con un paquete de sesiones. Sin mensualidades.",
+    "individual": "INDIVIDUAL",
+    "packages": "PAQUETES",
+    "discount": "(sesiones gratis)",
+    "ticketLabel": "BILLETE",
+    "singleLessons": {
+      "title": "Precios por sesión",
+      "plans": [
+        {
+          "id": "short",
+          "icon": "⏱️",
+          "name": "Clase de 25 minutos",
+          "price": "¥35",
+          "currency": "RMB",
+          "description": "Ideal para practicar rápido en agendas ocupadas."
+        },
+        {
+          "id": "normal",
+          "icon": "📚",
+          "name": "Clase de 55 minutos (Clase normal)",
+          "price": "¥55",
+          "currency": "RMB",
+          "description": "Más tiempo para aprender, más tiempo para mejorar."
+        },
+        {
+          "id": "ielts",
+          "icon": "🎯",
+          "name": "Clase de 55 minutos IELTS",
+          "price": "¥80",
+          "currency": "RMB",
+          "description": "Para quienes solo se conforman con lo mejor."
+        }
+      ]
+    },
+    "packagesSection": {
+      "title": "Paquetes de ahorro",
+      "subtitle": "Cuanto más aprendes, más ahorras",
+      "bestValue": "¡Mejor precio!",
+      "groups": [
+        {
+          "id": "packageA",
+          "badge": "Paquete A",
+          "name": "Clases de 25 minutos",
+          "tiers": [
+            { "label": "10 clases + 1 GRATIS", "price": "¥350" },
+            { "label": "30 clases + 4 GRATIS", "price": "¥1050", "bestValue": true }
+          ]
+        },
+        {
+          "id": "packageB",
+          "badge": "Paquete B ⭐",
+          "name": "Clases de 55 minutos",
+          "featured": true,
+          "tiers": [
+            { "label": "10 clases + 1 GRATIS", "price": "¥550" },
+            { "label": "30 clases + 4 GRATIS", "price": "¥1650", "bestValue": true }
+          ]
+        },
+        {
+          "id": "packageC",
+          "badge": "Paquete C",
+          "name": "Clases IELTS",
+          "tiers": [
+            { "label": "10 clases + 1 GRATIS", "price": "¥800" },
+            { "label": "30 clases + 4 GRATIS", "price": "¥2400", "bestValue": true }
+          ]
+        }
+      ]
+    },
     "faqEyebrow": "EJERCICIOS",
     "faqTitle": "Preguntas frecuentes",
     "faqs": [
       {
         "q": "¿Puedo cancelar cuando quiera?",
-        "a": "Sí, todos los boletos son mes a mes y puedes cancelar en cualquier momento desde tu cuenta, sin penalización."
+        "a": "Sí, pagas por sesión o por paquete de sesiones, sin mensualidades ni permanencia: usa tus sesiones a tu ritmo."
       },
       {
         "q": "¿Necesito experiencia previa con inglés?",
@@ -167,7 +230,7 @@
     ],
     "ctaTitle": "Aborda tu primera clase gratis",
     "ctaNote": "sin compromiso, cancela cuando quieras",
-    "ctaButton": "VER BOLETOS"
+    "ctaButton": "VER BILLETES"
   },
   "teacherProfile": {
     "dossierLabel": "DOSSIER DEL PROFESOR · EXPEDIENTE Nº {{number}}",
