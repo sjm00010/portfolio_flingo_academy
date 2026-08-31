@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, NavLink, useParams, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useParams, useNavigate, useLocation } from 'react-router-dom';
 import { SUPPORTED_LANGUAGES } from '../../i18n';
 import './Navbar.css';
 
@@ -8,10 +8,13 @@ function Navbar() {
   const { t } = useTranslation();
   const { lang } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const switchLanguage = (nextLang) => {
-    navigate(`/${nextLang}`);
+    const restOfPath = location.pathname.split('/').slice(2).join('/');
+    const newPath = restOfPath ? `/${nextLang}/${restOfPath}` : `/${nextLang}`;
+    navigate(`${newPath}${location.search}${location.hash}`);
     setIsOpen(false);
   };
 

@@ -1,8 +1,110 @@
 .bp-box {
+  --bp-color: #ff0083;
   position: relative;
   width: 600px;
   margin: 0 auto;
-  transform: scale(0.7) rotate(-5deg);
+  zoom: 0.7;
+  transform: rotate(-5deg);
+  transition: transform 0.25s ease;
+}
+
+.bp-box:hover {
+  transform: rotate(-1deg) translateY(-10px) scale(1.04);
+}
+
+.bp-box:hover .bp-ticket {
+  box-shadow: 0 0 40px #aaa, 0 18px 34px -10px rgba(0, 0, 0, 0.4);
+}
+
+.bp-box--business {
+  zoom: 0.82;
+}
+
+@media (max-width: 480px) {
+  .bp-box {
+    zoom: 0.55;
+  }
+
+  .bp-box--business {
+    zoom: 0.64;
+  }
+}
+
+@media (max-width: 380px) {
+  .bp-box {
+    zoom: 0.48;
+  }
+
+  .bp-box--business {
+    zoom: 0.56;
+  }
+}
+
+@media (max-width: 340px) {
+  .bp-box {
+    zoom: 0.42;
+  }
+
+  .bp-box--business {
+    zoom: 0.49;
+  }
+}
+
+.bp-box--business .bp-ticket {
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 0 100px #aaa,
+    0 0 0 2px #f0c14b,
+    0 0 20px 3px rgba(240, 193, 75, 0.55);
+  animation: bp-glow 5s ease-in-out infinite;
+}
+
+.bp-box--business .bp-ticket::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.85) 50%,
+    transparent 70%
+  );
+  transform: skewX(-20deg);
+  animation: bp-shimmer 7s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes bp-shimmer {
+  0% {
+    left: -60%;
+  }
+  20% {
+    left: 130%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+
+@keyframes bp-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 100px #aaa,
+      0 0 0 2px #f0c14b,
+      0 0 16px 3px rgba(240, 193, 75, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 100px #aaa,
+      0 0 0 3px #f0c14b,
+      0 0 32px 8px rgba(240, 193, 75, 0.95);
+  }
 }
 
 .bp-clip {
@@ -51,7 +153,7 @@
 .bp-ticket {
   width: 600px;
   height: 250px;
-  background: #ff0083;
+  background: var(--bp-color);
   border-radius: 3px;
   box-shadow: 0 0 100px #aaa;
 }
@@ -83,7 +185,7 @@
   margin-top: 8px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #ff0083;
+  border-right: 5px solid var(--bp-color);
 }
 
 .bp-left li:nth-child(3),
@@ -141,21 +243,21 @@
   margin-left: 2px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #ff0083;
+  border-right: 5px solid var(--bp-color);
 }
 
 .bp-left li:nth-child(14) {
   margin-top: 7px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #ff0083;
+  border-right: 5px solid var(--bp-color);
 }
 
 .bp-right li:nth-child(-n + 2) {
   margin-top: 8px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #ff0083;
+  border-left: 5px solid var(--bp-color);
 }
 
 .bp-right li:nth-child(3),
@@ -212,7 +314,7 @@
   margin-top: 7px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #ff0083;
+  border-left: 5px solid var(--bp-color);
 }
 
 .bp-ticket:after {
@@ -225,9 +327,9 @@
   box-shadow:
     inset 0 0 0 #fff,
     inset 0 -10px 0 #999,
-    inset 0 -20px 0 #ff0083,
+    inset 0 -20px 0 var(--bp-color),
     inset 0 -30px 0 #999,
-    inset 0 -40px 0 #ff0083,
+    inset 0 -40px 0 var(--bp-color),
     inset 0 -50px 0 #999,
     inset 0 -60px 0 #e5e5e5,
     inset 0 -70px 0 #999,
@@ -245,9 +347,9 @@
     inset 0 -190px 0 #b0b0b0,
     inset 0 -200px 0 #eee,
     inset 0 -210px 0 #b0b0b0,
-    inset 0 -220px 0 #ff0083,
+    inset 0 -220px 0 var(--bp-color),
     inset 0 -230px 0 #999,
-    inset 0 -240px 0 #ff0083,
+    inset 0 -240px 0 var(--bp-color),
     inset 0 -250px 0 #999;
 }
 
@@ -269,7 +371,7 @@
 }
 
 .bp-airline--slip {
-  left: 455px;
+  left: 475px;
 }
 
 .bp-boarding {
@@ -315,6 +417,27 @@
   position: absolute;
   left: 105px;
   top: 0;
+}
+
+.bp-price--slip {
+  font-size: 34px;
+  top: 8px;
+  left: 400px;
+  width: 200px;
+  text-align: center;
+}
+
+.bp-price {
+  position: absolute;
+  font-family: Arial;
+  font-weight: bold;
+  color: #222;
+}
+
+.bp-price__currency {
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 2px;
 }
 
 .bp-plane--slip {
@@ -377,6 +500,14 @@
 
 .bp-flight--slip {
   left: 410px;
+  font-size: 16px;
+  color: var(--bp-color);
+}
+
+.bp-flight--slip span {
+  font-size: 26px;
+  font-weight: 800;
+  color: #222;
 }
 
 .bp-gate {
@@ -410,16 +541,25 @@
 }
 
 .bp-seat--slip {
-  left: 540px;
+  left: 530px;
+  font-size: 16px;
+  color: var(--bp-color);
+}
+
+.bp-seat--slip span {
+  font-size: 26px;
+  font-weight: 800;
+  color: #222;
 }
 
 .bp-boardingtime {
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 10px;
   font-family: 'Arial Narrow', Arial;
   font-weight: bold;
   font-size: 14px;
+  line-height: 1.1;
   color: #999;
 }
 

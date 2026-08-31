@@ -1,6 +1,6 @@
 .pricing-hero {
   text-align: center;
-  padding: 3.5rem 0 1rem;
+  padding: 0.4rem 0 1rem;
 }
 
 .pricing-hero h1 {
@@ -14,45 +14,160 @@
   margin: 0 auto 1.6rem;
 }
 
+.pricing-toggle-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.pricing-toggle__badge {
+  position: absolute;
+  top: -14px;
+  right: -48px;
+  background: var(--color-green);
+  color: var(--color-bg);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  transform: rotate(10deg);
+  z-index: 2;
+}
+
 .pricing-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  border: 1.5px dashed var(--color-border-strong);
+  position: relative;
+  display: flex;
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: 999px;
   padding: 4px;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 700;
 }
 
-.pricing-toggle span {
-  padding: 0.5rem 1.1rem;
-  color: var(--color-navy-soft);
+.pricing-toggle__thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  background: var(--color-navy);
+  border-radius: 999px;
+  transition: transform 0.25s ease;
 }
 
-.pricing-toggle span.is-active {
-  background: var(--color-navy);
+.pricing-toggle--packages .pricing-toggle__thumb {
+  transform: translateX(100%);
+}
+
+.pricing-toggle button {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 0;
+  padding: 0.5rem 1.1rem;
+  color: var(--color-navy-soft);
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  transition: color 0.2s ease;
+}
+
+.pricing-toggle button.is-active {
   color: var(--color-bg);
 }
 
-.pricing-toggle .discount {
-  color: var(--color-green);
+.pricing-type-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 40rem;
+  margin: 0 auto 3.6rem;
+}
+
+.pricing-type-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 8.5rem;
+  padding: 1rem 0.8rem 0.9rem;
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.pricing-type-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--card-color);
+}
+
+.pricing-type-card.is-active {
+  border-color: var(--card-color);
+  border-width: 2px;
+  box-shadow: 0 10px 22px -10px var(--card-color);
+}
+
+.pricing-type-card__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.pricing-type-card__name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.pricing-type-card__price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--card-color);
+}
+
+.pricing-type-card__check {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-color);
+  color: var(--color-bg);
+  border-radius: 50%;
+  font-size: 0.7rem;
 }
 
 .pricing__grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.8rem;
+}
+
+.pricing__ticket {
+  max-width: 100%;
 }
 
 .pricing-packages__subtitle {
   text-align: center;
   color: var(--color-text-muted);
-  margin: -0.6rem 0 1.8rem;
-}
-
-@media (min-width: 700px) {
-  .pricing__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  margin: -2.6rem 0 2.4rem;
 }

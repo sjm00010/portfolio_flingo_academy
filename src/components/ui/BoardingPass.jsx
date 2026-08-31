@@ -1,20 +1,68 @@
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './BoardingPass.css';
 
 const STUB_COUNT = 14;
+const DESTINATION_LABEL = 'ENG';
+
+const ORIGIN_LABEL_BY_LANG = { es: 'ESP', zh: 'CHN', en: 'ENG' };
+const PASSENGER_NAME_BY_LANG = { es: 'TÚ', zh: '你', en: 'YOU' };
+const LOCALE_BY_LANG = { es: 'es-ES', zh: 'zh-CN', en: 'en-US' };
+
+const SEAT_LETTERS = ['A', 'B', 'C', 'D', 'E'];
+
+function randomCode() {
+  return String(Math.floor(Math.random() * 99) + 1).padStart(2, '0');
+}
+
+function randomSeat() {
+  const letter = SEAT_LETTERS[Math.floor(Math.random() * SEAT_LETTERS.length)];
+  return `${randomCode()}${letter}`;
+}
+
+function formatBoardingTime(date, lang) {
+  const locale = LOCALE_BY_LANG[lang] || LOCALE_BY_LANG.en;
+  const time = date.toLocaleTimeString(locale, {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+  const month = date.toLocaleDateString(locale, { month: 'long' }).toUpperCase();
+  return `${time} ON ${month} ${date.getFullYear()}`;
+}
 
 function BoardingPass({
-  airline = 'Postsnap',
-  boardingLabel = 'Boarding pass',
-  from = 'LHR',
-  to = 'SFO',
-  passengerName = 'BLOGGS, Joe',
-  flightNumber = 'X3-65C3',
-  gate = '11B',
-  seat = '45A',
-  boardingTime = '8:25PM ON AUGUST 2014',
+  airline = 'Flingo',
+  price = '45',
+  currency = '€',
+  classesCount = 'X',
+  minutes = 'Y',
+  color,
+  business = false,
 }) {
+  const { i18n } = useTranslation();
+  const lang = (i18n.language || 'en').slice(0, 2);
+
+  const origin = ORIGIN_LABEL_BY_LANG[lang] || ORIGIN_LABEL_BY_LANG.en;
+  const passengerName = PASSENGER_NAME_BY_LANG[lang] || PASSENGER_NAME_BY_LANG.en;
+
+  const [gate] = useState(randomCode);
+  const [seat] = useState(randomSeat);
+  const [flightNumber] = useState(() => `FL-${randomCode()}`);
+
+  const [now, setNow] = useState(() => new Date());
+  useEffect(() => {
+    const intervalId = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const boardingTime = formatBoardingTime(now, lang);
+
   return (
-    <div className="bp-box">
+    <div
+      className={`bp-box${business ? ' bp-box--business' : ''}`}
+      style={color ? { '--bp-color': color } : undefined}
+    >
       <div className="bp-clip" />
       <ul className="bp-left">
         {Array.from({ length: STUB_COUNT }).map((_, i) => (
@@ -31,19 +79,18 @@ function BoardingPass({
       <div className="bp-ticket">
         <span className="bp-airline">{airline}</span>
         <span className="bp-airline bp-airline--slip">{airline}</span>
-        <span className="bp-boarding">{boardingLabel}</span>
+        <span className="bp-boarding">{business ? 'Business pass' : 'Boarding pass'}</span>
         <div className="bp-content">
-          <span className="bp-jfk">{from}</span>
+          <span className="bp-jfk">{origin}</span>
           <span className="bp-plane">
             <PlaneIcon size={60} />
           </span>
-          <span className="bp-sfo">{to}</span>
+          <span className="bp-sfo">{DESTINATION_LABEL}</span>
 
-          <span className="bp-jfk bp-jfk--slip">{from}</span>
-          <span className="bp-plane bp-plane--slip">
-            <PlaneIcon size={50} />
+          <span className="bp-price bp-price--slip">
+            {price}
+            <span className="bp-price__currency">{currency}</span>
           </span>
-          <span className="bp-sfo bp-sfo--slip">{to}</span>
 
           <div className="bp-sub-content">
             <span className="bp-watermark">{airline}</span>
@@ -74,19 +121,14 @@ function BoardingPass({
             </span>
 
             <span className="bp-flight bp-flight--slip">
-              FLIGHT N&deg;
+              CLASES
               <br />
-              <span>{flightNumber}</span>
+              <span>{classesCount}</span>
             </span>
             <span className="bp-seat bp-seat--slip">
-              SEAT
+              MINUTES
               <br />
-              <span>{seat}</span>
-            </span>
-            <span className="bp-name bp-name--slip">
-              PASSENGER NAME
-              <br />
-              <span>{passengerName}</span>
+              <span>{minutes}</span>
             </span>
           </div>
         </div>

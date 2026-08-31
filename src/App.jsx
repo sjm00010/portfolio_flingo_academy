@@ -6,7 +6,6 @@ import PricingPage from './pages/PricingPage';
 import AboutPage from './pages/AboutPage';
 import TeachersPage from './pages/TeachersPage';
 import TeacherProfilePage from './pages/TeacherProfilePage';
-import BoardingPassTestPage from './pages/BoardingPassTestPage';
 import './App.css';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/:lang/about" element={<AboutPage />} />
         <Route path="/:lang/teachers" element={<TeachersPage />} />
         <Route path="/:lang/teachers/:teacherId" element={<TeacherProfilePage />} />
-        <Route path="/test/boarding-pass" element={<BoardingPassTestPage />} />
         <Route path="*" element={<LanguageRedirect />} />
       </Routes>
     </>

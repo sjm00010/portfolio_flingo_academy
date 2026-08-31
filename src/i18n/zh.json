@@ -131,6 +131,11 @@
     "packages": "课程包",
     "discount": "（附赠课程）",
     "ticketLabel": "票",
+    "selectorLabels": {
+      "short": "25 分钟",
+      "normal": "55 分钟",
+      "ielts": "55 分钟 IELTS"
+    },
     "singleLessons": {
       "title": "单次课程价格",
       "plans": [

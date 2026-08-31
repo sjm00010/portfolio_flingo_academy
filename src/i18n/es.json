@@ -144,6 +144,11 @@
     "packages": "PAQUETES",
     "discount": "(sesiones gratis)",
     "ticketLabel": "BILLETE",
+    "selectorLabels": {
+      "short": "25 min",
+      "normal": "55 min",
+      "ielts": "55 min IELTS"
+    },
     "singleLessons": {
       "title": "Precios por sesión",
       "plans": [
