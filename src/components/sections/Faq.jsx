@@ -8,7 +8,7 @@ function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="section section--stripes">
+    <section className="section faq-section">
       <div className="container">
         <div className="section-header section-header--center">
           <div className="eyebrow">{t('pricing.faqEyebrow')}</div>
