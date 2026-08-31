@@ -104,7 +104,27 @@
   "teachers": {
     "eyebrow": "FACULTY",
     "title": "Learn with the best",
-    "viewProfile": "View profile"
+    "viewProfile": "View profile",
+    "profiles": {
+      "teacher-f": {
+        "name": "Teacher F",
+        "role": "Founder & Senior ESL Teacher",
+        "tags": ["TEFL Certified", "IELTS Speaking Coach", "Business English"],
+        "certificates": ["Official TEFL Certification"]
+      },
+      "teacher-cherry": {
+        "name": "Teacher Cherry",
+        "role": "Senior English Instructor",
+        "tags": ["TESOL Certified", "All Ages", "Corporate Training"],
+        "certificates": ["Official TESOL Certification"]
+      },
+      "teacher-diza": {
+        "name": "Teacher Diza",
+        "role": "Senior ESL Instructor",
+        "tags": ["TESOL Certified", "TEYL Certified", "Korea, China & Spain Specialist"],
+        "certificates": ["TESOL Certificate", "TEYL Certificate"]
+      }
+    }
   },
   "contact": {
     "eyebrow": "GET IN TOUCH",
@@ -125,7 +145,7 @@
   },
   "cta": {
     "title": "Ready for the next chapter?",
-    "note": "your first class is free, no card required",
+    "note": "your first class is free",
     "button": "CONTACT US"
   },
   "footer": {
@@ -237,6 +257,7 @@
     "dossierLabel": "TEACHER DOSSIER · FILE Nº {{number}}",
     "bookButton": "BOOK A CLASS",
     "messageButton": "SEND MESSAGE",
+    "certificatesTitle": "Certificates",
     "similarTitle": "Other teachers"
   }
 }

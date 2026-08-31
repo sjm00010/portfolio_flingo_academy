@@ -91,7 +91,27 @@
   "teachers": {
     "eyebrow": "师资团队",
     "title": "跟最好的老师学习",
-    "viewProfile": "查看资料"
+    "viewProfile": "查看资料",
+    "profiles": {
+      "teacher-f": {
+        "name": "F老师",
+        "role": "创始人兼高级ESL教师",
+        "tags": ["TEFL认证", "雅思口语教练", "商务英语"],
+        "certificates": ["官方TEFL证书"]
+      },
+      "teacher-cherry": {
+        "name": "Cherry老师",
+        "role": "高级英语教师",
+        "tags": ["TESOL认证", "全年龄段", "企业培训"],
+        "certificates": ["官方TESOL证书"]
+      },
+      "teacher-diza": {
+        "name": "Diza老师",
+        "role": "高级ESL教师",
+        "tags": ["TESOL认证", "TEYL认证", "韩国、中国和西班牙专家"],
+        "certificates": ["TESOL证书", "TEYL证书"]
+      }
+    }
   },
   "contact": {
     "eyebrow": "联系我们",
@@ -112,7 +132,7 @@
   },
   "cta": {
     "title": "准备好开启下一章了吗？",
-    "note": "第一节课免费，无需信用卡",
+    "note": "第一节课免费",
     "button": "联系我们"
   },
   "footer": {
@@ -224,6 +244,7 @@
     "dossierLabel": "教师档案 · 编号 Nº {{number}}",
     "bookButton": "预约课程",
     "messageButton": "发送消息",
+    "certificatesTitle": "证书",
     "similarTitle": "其他教师"
   }
 }

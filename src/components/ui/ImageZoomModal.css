@@ -1,0 +1,46 @@
+.image-zoom-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(15, 20, 30, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-zoom-modal__viewport {
+  width: 90vw;
+  height: 85vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+}
+
+.image-zoom-modal__image {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  transition: transform 0.05s linear;
+  user-select: none;
+}
+
+.image-zoom-modal__close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-zoom-modal__close:hover {
+  background: rgba(255, 255, 255, 0.22);
+}

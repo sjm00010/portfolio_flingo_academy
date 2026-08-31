@@ -8,6 +8,7 @@ const TEAM_TEACHER_IDS = ['teacher-cherry', 'teacher-diza'];
 function Team({ id }) {
   const { t } = useTranslation();
   const bios = t('about.team.bios', { returnObjects: true });
+  const profiles = t('teachers.profiles', { returnObjects: true });
   const members = TEACHERS.filter((teacher) => TEAM_TEACHER_IDS.includes(teacher.id));
 
   return (
@@ -19,18 +20,21 @@ function Team({ id }) {
         </div>
 
         <div className="team__grid">
-          {members.map((member) => (
-            <div className="founder-card" key={member.id}>
-              <div className="founder-card__photo">
-                <img src={member.photo} alt={member.name} />
+          {members.map((member) => {
+            const profile = profiles[member.id];
+            return (
+              <div className="founder-card" key={member.id}>
+                <div className="founder-card__photo">
+                  <img src={member.photo} alt={profile.name} />
+                </div>
+                <div className="founder-card__body">
+                  <h3 className="founder-card__name">{profile.name}</h3>
+                  <div className="founder-card__role mono">{profile.role}</div>
+                  <p className="founder-card__desc">{bios[member.id]}</p>
+                </div>
               </div>
-              <div className="founder-card__body">
-                <h3 className="founder-card__name">{member.name}</h3>
-                <div className="founder-card__role mono">{member.role}</div>
-                <p className="founder-card__desc">{bios[member.id]}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

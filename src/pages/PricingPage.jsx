@@ -30,12 +30,7 @@ function PricingPage() {
       <main>
         <Pricing />
         <Faq />
-        <CtaBanner
-          titleKey="pricing.ctaTitle"
-          noteKey="pricing.ctaNote"
-          buttonKey="pricing.ctaButton"
-          href="#"
-        />
+        <CtaBanner href={`/${lang}#contact`} />
       </main>
       <Footer />
     </>

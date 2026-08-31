@@ -9,8 +9,29 @@
 .dossier {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas:
+    'photo'
+    'content'
+    'similar';
   gap: 2.2rem;
   padding: 1.2rem 0 3rem;
+}
+
+.dossier__photo-col {
+  grid-area: photo;
+}
+
+.dossier__content {
+  grid-area: content;
+}
+
+.dossier__similar-col {
+  grid-area: similar;
+  margin-top: -2.6rem;
+}
+
+.dossier__similar-col h3 {
+  margin-top: 0;
 }
 
 .dossier__photo {
@@ -114,6 +135,7 @@
 
 .dossier h3 {
   font-size: 1.2rem;
+  margin-top: 1.4rem;
   margin-bottom: 1rem;
 }
 
@@ -159,10 +181,48 @@
   padding: 0.35rem 0;
 }
 
+.dossier__certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.8rem;
+}
+
+.dossier__certificates button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dossier__certificates img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1.5px solid var(--color-border);
+  background: #fff;
+}
+
+.dossier__certificates img.is-landscape {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.dossier__certificates span {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.68rem;
+  color: var(--color-navy);
+  margin-top: 0.4rem;
+}
+
 .similar-teachers {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  margin-top: 1.4rem;
   margin-bottom: 1rem;
 }
 
@@ -200,10 +260,9 @@
 @media (min-width: 900px) {
   .dossier {
     grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      'photo content'
+      'similar content';
     gap: 3rem;
-  }
-
-  .similar-teachers {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

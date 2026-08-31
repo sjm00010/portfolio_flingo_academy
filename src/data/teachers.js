@@ -1,30 +1,27 @@
 export const TEACHERS = [
   {
     id: 'teacher-f',
-    name: 'Teacher F',
-    role: 'Founder & Senior ESL Teacher',
     initials: 'F',
     number: '001',
     photo: '/assets/teachers/teache_f.png',
-    tags: ['TEFL Certified', 'IELTS Speaking Coach', 'Business English'],
+    certificates: ['/assets/certificates/teacher-f/certificate.png'],
   },
   {
     id: 'teacher-cherry',
-    name: 'Teacher Cherry',
-    role: 'Senior English Instructor',
     initials: 'C',
     number: '002',
     photo: '/assets/teachers/teacher_cherry.png',
-    tags: ['TESOL Certified', 'All Ages', 'Corporate Training'],
+    certificates: ['/assets/certificates/teacher-cherry/certificate.png'],
   },
   {
     id: 'teacher-diza',
-    name: 'Teacher Diza',
-    role: 'Senior ESL Instructor',
     initials: 'D',
     number: '003',
     photo: '/assets/teachers/teacher_diza.png',
-    tags: ['TESOL Certified', 'TEYL Certified', 'Korea, China & Spain Specialist'],
+    certificates: [
+      '/assets/certificates/teacher-diza/certificate_1.png',
+      '/assets/certificates/teacher-diza/certificate_2.png',
+    ],
   },
 ];
 

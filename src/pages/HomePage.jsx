@@ -34,7 +34,11 @@ function HomePage() {
         <Method />
         <Teachers id="teachers" />
         <Contact id="contact" />
-        <CtaBanner />
+        <CtaBanner
+          titleKey="pricing.ctaTitle"
+          noteKey="pricing.ctaNote"
+          buttonKey="pricing.ctaButton"
+        />
       </main>
       <Footer />
     </>

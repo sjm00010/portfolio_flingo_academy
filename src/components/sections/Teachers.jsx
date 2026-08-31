@@ -14,6 +14,7 @@ const HOVER_ANIMATIONS = {
 function Teachers({ id }) {
   const { t } = useTranslation();
   const { lang } = useParams();
+  const profiles = t('teachers.profiles', { returnObjects: true });
 
   return (
     <section className="section section--stripes" id={id}>
@@ -27,6 +28,7 @@ function Teachers({ id }) {
           {TEACHERS.map((teacher, index) => {
             const pin = PIN_COLORS[index % PIN_COLORS.length];
             const hoverAnimation = HOVER_ANIMATIONS[teacher.id] ?? '';
+            const profile = profiles[teacher.id];
 
             return (
               <Link
@@ -36,12 +38,12 @@ function Teachers({ id }) {
               >
                 <span className="teacher-tile__pin" aria-hidden="true" />
                 <div className="teacher-tile__photo">
-                  <img src={teacher.photo} alt={teacher.name} className="teacher-tile__img" />
+                  <img src={teacher.photo} alt={profile.name} className="teacher-tile__img" />
                   <span className="teacher-tile__cta">{t('teachers.viewProfile')} →</span>
                 </div>
                 <div className="teacher-tile__caption">
-                  <div className="teacher-tile__name">{teacher.name}</div>
-                  <div className="teacher-tile__role">{teacher.role}</div>
+                  <div className="teacher-tile__name">{profile.name}</div>
+                  <div className="teacher-tile__role">{profile.role}</div>
                 </div>
               </Link>
             );

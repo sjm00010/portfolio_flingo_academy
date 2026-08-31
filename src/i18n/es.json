@@ -104,7 +104,31 @@
   "teachers": {
     "eyebrow": "CUERPO DOCENTE",
     "title": "Aprende con los mejores",
-    "viewProfile": "Ver perfil"
+    "viewProfile": "Ver perfil",
+    "profiles": {
+      "teacher-f": {
+        "name": "Profesor F",
+        "role": "Fundador y Profesor Senior de ESL",
+        "tags": ["Certificado TEFL", "Coach de Speaking IELTS", "Inglés de Negocios"],
+        "certificates": ["Certificación Oficial TEFL"]
+      },
+      "teacher-cherry": {
+        "name": "Profesora Cherry",
+        "role": "Instructora Senior de Inglés",
+        "tags": ["Certificada TESOL", "Todas las edades", "Formación Corporativa"],
+        "certificates": ["Certificación Oficial TESOL"]
+      },
+      "teacher-diza": {
+        "name": "Profesora Diza",
+        "role": "Instructora Senior de ESL",
+        "tags": [
+          "Certificada TESOL",
+          "Certificada TEYL",
+          "Especialista en Corea, China y España"
+        ],
+        "certificates": ["Certificado TESOL", "Certificado TEYL"]
+      }
+    }
   },
   "contact": {
     "eyebrow": "CONTACTO",
@@ -125,7 +149,7 @@
   },
   "cta": {
     "title": "¿Listo para el siguiente capítulo?",
-    "note": "tu primera clase es gratis, sin tarjeta",
+    "note": "tu primera clase es gratis",
     "button": "CONTÁCTANOS"
   },
   "footer": {
@@ -237,6 +261,7 @@
     "dossierLabel": "DOSSIER DEL PROFESOR · EXPEDIENTE Nº {{number}}",
     "bookButton": "RESERVAR CLASE",
     "messageButton": "ENVIAR MENSAJE",
+    "certificatesTitle": "Certificados",
     "similarTitle": "Otros profesores"
   }
 }

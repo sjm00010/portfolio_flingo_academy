@@ -56,7 +56,7 @@ function Navbar() {
               </button>
             ))}
           </div>
-          <Link to={`/${lang}/pricing`} className="btn btn--outline">
+          <Link to={`/${lang}#contact`} className="btn btn--outline">
             {t('nav.cta')}
           </Link>
           <button
